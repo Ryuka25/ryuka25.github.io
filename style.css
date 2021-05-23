@@ -1,0 +1,47 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #0096FF; /*bleu*/
+    text-align: center;
+    color: #FFFFFF; /*blanc*/
+}
+
+nav {
+    background-color: #000000; /*noir*/
+    overflow: hidden;
+    width: 100%;
+}
+
+nav a {
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    padding: 10px 5px;
+    text-decoration: none;
+    /*font-size: 17px;*/
+}
+
+nav a.active {
+    background-color: #0096FF;
+    color: #FFFFFF;
+}
+
+nav a#a-propos {
+    float: right;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+}
