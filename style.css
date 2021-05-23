@@ -1,14 +1,31 @@
+/*Bien placer l'footer*/
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+main {
+    flex-grow: 1; /*Occupe L'espace restant afin de placer l'footer en bas de page*/
+}
+
+/*Body Style*/
+
+body {
+    font-family: Verdana;
+    background-color: #0096FF;
+}
+
+/*Header Style*/
+
 header {
     background-color: #0096FF; /*bleu*/
     text-align: center;
     color: #FFFFFF; /*blanc*/
 }
+
+/*Navigation Bar Style*/
 
 nav {
     background-color: #000000; /*noir*/
@@ -35,9 +52,34 @@ nav a#a-propos {
     float: right;
 }
 
+/*Main Element Style*/
 main {
-    flex-grow: 1;
+    background-color: #FFFFFF;
+    padding: 2%;
 }
+
+table {
+    width: 100%;
+}
+
+/*Progress Bar style*/
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 25px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #FFAA00;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #0096FF;
+}
+
+/*Footer Style*/
 
 footer {
     background-color: #000000;
