@@ -5,7 +5,12 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Lovanirina | Ryuka - Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../styles/style.css" type="text/css" media="all" />
+        <script src="../scripts/dropdown-btn.js" type="text/javascript" charset="utf-8"></script>
+        
+        <!-- à changer -->
+        
+        <script src="https://kit.fontawesome.com/f89e2c7925.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
@@ -18,11 +23,16 @@
         </header>
         
         <nav>
-            <a href="index.html">Acceuil</a>
-            <a href="portfolio-musicale.html">Portfolio Musicale</a>
-            <a href="portfolio-developpeur.html">Portfolio Devellopeur</a>
-            <a class="active" href="contact.html">Contact</a>
-            <a id="a-propos" href="a-propos.html">À propos</a>
+            <a href="../index.html"><i class="fas fa-home"></i></a>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="../portfolio/portfolio-musicale.html">Musicale</a>
+                    <a href="../portfolio/portfolio-developpeur.html">Développeur</a>
+                </div>
+            </div>
+            <a class="active" href="../contact/contact.html"><i class="fas fa-envelope"></i></a>
+            <a class="right" href="../a-propos/a-propos.html"><i class="fas fa-user"></i></a>
         </nav>
         
         <main>
