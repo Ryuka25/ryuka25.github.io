@@ -31,26 +31,85 @@ nav {
     background-color: #000000; /*noir*/
     overflow: hidden;
     width: 100%;
+    border-radius: 5px 5px 0 0 ;
 }
 
 nav a {
     float: left;
+    width: 15%;
     color: #FFFFFF;
     text-align: center;
-    /*padding: 14px 16px;*/
-    padding: 10px 5px;
+    padding: 5px 5px;
     text-decoration: none;
-    /*font-size: 17px;*/
+    overflow: scroll;
 }
 
-nav a.active {
-    background-color: #0096FF;
+nav a .fas, nav a .far {
+    font-size: 20px;
+}
+
+nav a.right{
+    float: right;
+}
+
+nav .active {
+    background-color: #FFAA00;
     color: #FFFFFF;
 }
 
-nav a#a-propos {
-    float: right;
+/* dropdown effect */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
+        
+.dropdown .dropdown-btn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+        
+
+        
+.dropdown-content a {
+    float: none;
+    text-align: left;
+    color: white;
+    padding: 5px 5px;
+    display: block;
+    width: 35vh;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    z-index: 1;
+        }
+        
+.dropdown-content a:hover {
+    background-color: ##505050;
+}
+        
+.show {
+    display: block;
+}
+
+/*sticky navbar*/ /*dropdown effect bug*/
+/* 
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+*/
 
 /*Main Element Style*/
 main {
@@ -86,4 +145,5 @@ footer {
     text-align: center;
     color: #FFFFFF;
     width: 100%;
+    border-radius: 0 0 5px 5px;
 }
