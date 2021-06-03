@@ -10,7 +10,7 @@
         
         <!-- à changer -->
         
-        <script src="https://kit.fontawesome.com/f89e2c7925.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../fontawesome/free/5.15.3-web/css/all.css"/>
     </head>
     
     <body>
@@ -23,16 +23,25 @@
         </header>
         
         <nav>
-            <a href="../index.html"><i class="fas fa-home"></i></a>
-            <div class="dropdown active">
-                <button class="dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a class="active" href="../portfolio/portfolio-musicale.html">Musicale</a>
-                    <a href="../portfolio/portfolio-developpeur.html">Développeur</a>
-                </div>
-            </div>
-            <a href="../contact/contact.html"><i class="fas fa-envelope"></i></a>
-            <a class="right" href="../a-propos/a-propos.html"><i class="fas fa-user"></i></a>
+            <ul>
+                <li>
+                    <a href="../index.html"><i class="fas fa-home"></i></a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="active dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a class="active" href="../portfolio/portfolio-musicale.html"><i class="fas fa-music"></i> Musicale</a>
+                            <a href="../portfolio/portfolio-developpeur.html"><i class="fas fa-keyboard"></i> Développeur</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="../contact/contact.html"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="right">
+                    <a href="../a-propos/a-propos.html"><i class="fas fa-user"></i></a>
+                </li>
+            </ul>
         </nav>
         
         <main>

@@ -10,7 +10,7 @@
         
         <!-- à changer -->
         
-        <script src="https://kit.fontawesome.com/f89e2c7925.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../fontawesome/free/5.15.3-web/css/all.css"/>
     </head>
     
     <body>
@@ -23,94 +23,130 @@
         </header>
         
         <nav>
-            <a href="../index.html"><i class="fas fa-home"></i></a>
-            <div class="dropdown active">
-                <button class="dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="../portfolio/portfolio-musicale.html">Musicale</a>
-                    <a class="active" href="../portfolio/portfolio-developpeur.html">Développeur</a>
+            <ul>
+                <li>
+                    <a href="../index.html"><i class="fas fa-home"></i></a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="active dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../portfolio/portfolio-musicale.html"><i class="fas fa-music"></i> Musicale</a>
+                            <a id="active-nav-li-last-child" href="../portfolio/portfolio-developpeur.html"><i class="fas fa-keyboard"></i> Développeur</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="../contact/contact.html"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="right">
+                    <a href="../a-propos/a-propos.html"><i class="fas fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+                
+        <main>
+            <h1>PORTFOLIO DEVELOPPEUR</h1>
+            <h2>MES COMPÉTENCES INFORMATIQUES</h2>
+            
+            <div class="container">
+                <div class="container-header">
+                    <h3>BUREAUTIQUE</h3>
+                </div>
+                <div class="container-content">
+                    <ul>
+                        <li>
+                            <p>SKILLS</p>
+                            <div class="progress-bar">
+                                <div class="progress-bar-value" style="width: 30%;">30%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="dactylo-progress">Dactylo</label><br />
+                            <progress id="dactylo-progress" max="100" value="65" title="65%"></progress>
+                        </li>
+                        <li>
+                            <label for="word-progress">Microsoft Word</label><br />
+                            <progress id="word-progress" max="100" value="60">60%</progress>
+                        </li>
+                        <li>
+                            <label for="excel-progress">Microsoft Excel</label><br />
+                            <progress id="excel-progress" max="100" value="10">10%</progress>
+                        </li>
+                        <li>
+                            <label for="powerpoint-progress">Microsoft Powerpoint</label><br />
+                            <progress id="powerpoint-progress" max="100" value="10">10%</progress>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <a href="../contact/contact.html"><i class="fas fa-envelope"></i></a>
-            <a class="right" href="../a-propos/a-propos.html"><i class="fas fa-user"></i></a>
-        </nav>
-        
-        <main>
-                <table>
-                    <caption>
-                        <h3>MES COMPÉTENCES INFORMATIQUES</h3>
-                    </caption>
-                    
-                    <tr>
-                        <th colspan="2">PRÉSENCE NUMÉRIQUE</th>
-                    </tr>
-                    <tr>
-                        <th><label for="facebookmessenger-presence">Facebook<br />et Messenger</label></th>
-                        <td><progress id="facebookmessenger-presence" max="5" value="4"></progress></td>
-                    </tr>
-                        <th><label for="github-presence">Github</label></th>
-                        <td><progress id="github-presence" max="5" value="2"></progress></td>
-                    </tr>
-                    <tr>
-                        <th rowspan="2"><label for="others-presence">Autres plateformes</label></th>
-                        <td><progress id="others-presence" max="20" value="7"></progress></td>
-                    </tr>
-                    <tr>
-                        <td>G-mail, Whatsapp, etc.</td>
-                    </tr>
-                    
-                    <tr>
-                        <th colspan="2">BUREAUTIQUE</th>
-                    </tr>
-                    <tr>
-                        <td><label for="dactylo-progress">Dactylo</label></td>
-                        <td><progress id="dactylo-progress" max="100" value="65">65%</progress></td>
-                    </tr>
-                    <tr>
-                        <td><label for="word-progress">Microsoft Word</label></td>
-                        <td><progress id="word-progress" max="100" value="60">60%</progress></td>
-                    </tr>
-                    <tr>
-                        <td><label for="excel-progress">Microsoft Excel</label></td>
-                        <td><progress id="excel-progress" max="100" value="10">10%</progress></td>
-                    </tr>
-                    <tr>
-                        <td><label for="powerpoint-progress">Microsoft Powerpoint</label></td>
-                        <td><progress id="powerpoint-progress" max="100" value="10">10%</progress></td>
-                    </tr>
-                    
-                    <tr>
-                        <th colspan="2">DEVELOPPEMENT WEB : CÔTÉ CLIENT</th>
-                    </tr>
-                    <tr>
-                        <td><label for="html-progress">HTML</label></td>
-                        <td><progress id="html-progress" max="100" value="20">20%</progress></td>
-                    </tr>
-                    <tr>
-                        <td><label for="css-progress">CSS</label></td>
-                        <td><progress id="css-progress" max ="100" value="2">02%</progress></td>
-                    </tr>
-                    <tr>
-                        <td><label for="js-progress">JavaScript</label></td>
-                        <td><progress id="js-progress" max="100" value="1">01%</progress></td>
-                    </tr>
-                    
-                    <tr>
-                        <th colspan="2">DEVELOPPEMENT WEB : CÔTÉ SERVEUR</th>
-                    </tr>
-                    <tr>
-                        <td><label for="sql-progress">SQL</label></td>
-                        <td><progress id="sql-progress" max="100" value="30">30%</progress></td>
-                    </tr>
-                    
-                    <tr>
-                        <th colspan="2">LANGUAGE DE PROGRAMMATION</th>
-                    </tr>
-                    <tr>
-                        <td><label for="python-progress">Python</label></td>
-                        <td><progress id="python-progress" max="100" value="2">02%</progress></td>
-                    </tr>
-                </table>
+            
+            <div class="container">
+                <div class="container-header">
+                    <h3>SYSTEME D'EXPLOITATION</h3>
+                </div>
+                <div class="container-content">
+                    <ul>
+                        <li>
+                            <label for="windows-progress">Windows</label><br />
+                            <progress id="windows-progress" max="100" value="75">75%</progress>
+                        </li>
+                        <li>
+                            <label for="linux-progress">Linux</label><br />
+                            <progress id="linux-progress" max="100" value="6">6%</progress>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="container-header">
+                    <h3>DEVELOPPEMENT WEB : CÔTÉ CLIENT</h3>
+                </div>
+                <div class="container-content">
+                    <ul>
+                        <li>
+                            <label for="html-progress">HTML</label><br />
+                            <progress id="html-progress" max="100" value="35">35%</progress>
+                        </li>
+                        <li>
+                            <label for="css-progress">CSS</label><br />
+                            <progress id="css-progress" max ="100" value="30">30%</progress>
+                        </li>
+                        <li>
+                            <label for="js-progress">JavaScript</label><br />
+                            <progress id="js-progress" max="100" value="05">05%</progress>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="container-header">
+                    <h3>DEVELOPPEMENT WEB : CÔTÉ SERVEUR</h3>
+                </div>
+                <div class="container-content">
+                    <ul>
+                        <li>
+                            <label for="sql-progress">SQL</label><br />
+                            <progress id="sql-progress" max="100" value="30">30%</progress>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="container-header">
+                    <h3>LANGUAGE DE PROGRAMMATION</h3>
+                </div>
+                <div class="container-content">
+                    <ul>
+                        <li>
+                            <label for="python-progress">Python</label><br />
+                            <progress id="python-progress" max="100" value="2">02%</progress>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </main>
         
         <footer>

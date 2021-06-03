@@ -1,3 +1,5 @@
+/*-----[Début mise en forme]-----*/
+
 /*Bien placer l'footer*/
 
 body {
@@ -27,78 +29,82 @@ header {
 
 /*Navigation Bar Style*/
 
-nav {
-    background-color: #000000; /*noir*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     width: 100%;
-    border-radius: 5px 5px 0 0 ;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
 }
 
-nav a {
+nav li {
     float: left;
-    width: 15%;
-    color: #FFFFFF;
+    display: block;
+    height: 100%;
     text-align: center;
-    padding: 5px 5px;
+    width: 25%;
+}
+
+nav li a {
+    display: block;
+    height: 100%;
+    padding: 5px;
     text-decoration: none;
-    overflow: scroll;
+    color: white;
 }
 
-nav a .fas, nav a .far {
-    font-size: 20px;
+#active-nav-li-last-child {
+    border-radius: 0px 0px 5px 5px;
+    background-color: #FFAA00;
+    color: #FFFFFF;
 }
 
-nav a.right{
+nav li.right {
     float: right;
+}
+
+nav .fas, nav .far {
+    font-size: 20px;
 }
 
 nav .active {
     background-color: #FFAA00;
-    color: #FFFFFF;
+    color: #FFFFFF
 }
 
 /* dropdown effect */
 
 .dropdown {
-    float: left;
-    overflow: hidden;
+    background-color: black;
 }
-        
-.dropdown .dropdown-btn {
-    font-size: 20px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 5px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-        
 
-        
-.dropdown-content a {
-    float: none;
-    text-align: left;
+.dropdown-btn {
+    width: 100%;
+    margin: 0;
+    border: none;
+    background-color: inherit;
     color: white;
-    padding: 5px 5px;
-    display: block;
-    width: 35vh;
-    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    overflow: scroll;
+    cursor: pointer;
+    font-family: inherit;
+    height: 27px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000000;
+    min-width: 50%;
     z-index: 1;
-        }
-        
-.dropdown-content a:hover {
-    background-color: ##505050;
+    background-color: inherit;
+    border-radius: 0 0 5px 5px;
 }
-        
-.show {
+
+.show , .dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -111,31 +117,13 @@ nav {
 }
 */
 
-/*Main Element Style*/
 main {
     background-color: #FFFFFF;
     padding: 2%;
 }
 
-table {
-    width: 100%;
-}
-
-/*Progress Bar style*/
-
-progress {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 25px;
-}
-
-progress[value]::-webkit-progress-bar {
-    background-color: #FFAA00;
-}
-
-progress[value]::-webkit-progress-value {
-    background-color: #0096FF;
+main h1 {
+    text-align: center;
 }
 
 /*Footer Style*/
@@ -145,5 +133,105 @@ footer {
     text-align: center;
     color: #FFFFFF;
     width: 100%;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
 }
+
+/*-----[Fin mise en forme]-----*/
+
+
+/*-----[Début div]-----*/
+
+/*disclaimer style*/
+.disclaimer {
+    background-color: #CACACA;
+    border-left: 5px solid red;
+    padding: 5px 5px;
+    color: #5C5C5C;
+}
+
+/*container style*/
+.container {
+    color: #FFFFFF;
+    margin: 10px;
+}
+
+.container-header {
+    background-color: #FFAA00;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container h2, .container h3 {
+    margin: 0;
+    padding: 5px 5px;
+    display: block;
+}
+
+.container-content {
+    background-color: #0096FF;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.container ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.container li {
+    display: block;
+    padding: 5px 5px;
+}
+
+/*-----[Fin div]-----*/
+
+
+/*-----[Début élément spéciale]-----*/
+
+/*Progress Bar style*/
+/*
+.progress-bar {
+    width: 100%;
+    background-color: #FFAA00;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    display: block;
+    height:30px;
+}
+
+.progress-bar-value {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: #0096FF;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+
+}*/
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    display: inline;
+    background-color: #FFAA00;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    height: 30px;
+}
+
+progress[value]::-webkit-progress-value, progress::-moz-progress-bar {
+    background-color: #0096FF;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.stack {
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+/*-----[Fin élément spéciale]-----*/

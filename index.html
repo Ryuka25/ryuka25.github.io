@@ -10,7 +10,7 @@
         
         <!-- à changer -->
         
-        <script src="https://kit.fontawesome.com/f89e2c7925.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../fontawesome/free/5.15.3-web/css/all.css"/>
     </head>
     
     <body>
@@ -23,27 +23,37 @@
         </header>
         
         <nav>
-            <a class="active" href="index.html"><i class="fas fa-home"></i></a>
-            <div class="dropdown">
-                <button class="dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="portfolio/portfolio-musicale.html">Musicale</a>
-                    <a href="portfolio/portfolio-developpeur.html">Développeur</a>
-                </div>
-            </div>
-            <a href="contact/contact.html"><i class="fas fa-envelope"></i></a>
-            <a class="right" href="a-propos/a-propos.html"><i class="fas fa-user"></i></a>
+            <ul>
+                <li class="active">
+                    <a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="portfolio/portfolio-musicale.html"><i class="fas fa-music"></i> Musicale</a>
+                            <a href="portfolio/portfolio-developpeur.html"><i class="fas fa-keyboard"></i> Développeur</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="contact/contact.html"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="right">
+                    <a href="a-propos/a-propos.html"><i class="fas fa-user"></i></a>
+                </li>
+            </ul>
         </nav>
         
         <main>
+            <h1>Bienvenue à vous sur mon site personelle!</h1>
             <p>
                 <b>Toutes mes salutations!</b><br />
-                Bienvenue sur mon site perso. Si vous ne me connaissez pas encore, derrière mon pseudo Ryuka No Yassei, ou simplement <b>Ryuka</b> pour mon nom de scène musicale, on peut aussi m'appeler <b>Lovanirina</b>.<br />
+                Si vous ne me connaissez pas encore, derrière mon pseudo Ryuka No Yassei, ou simplement <b>Ryuka</b> pour mon nom de scène musicale, on peut aussi m'appeler <b>Lovanirina</b>.<br />
                 Je suis également un étudiant en Informatique, encore en cours d'apprentissage à l'Ecole Supérieur du Technologie de l'Information (ESTI) Antanimena.
                 </p>
-            <p>
-                <small><i><b>NB:</b> Je suis également à la recherche et décourvertes de nouvelle horizon pour étoffer mes expériences et mes compétences, ainsi je me permet de glisser cette petite Note. Donc, si vous pensez que je serais utile dans votre équipe ou entreprise, ou si vous avez tout simplement bésoin de mes services, je suis totalement à votre disposition. Vous pouvez me contacter via les adresses dans <a href="contact/contact.html">Contact</a>.</i></small>
-            </p>
+            <div class="disclaimer">
+                Je suis également à la recherche et décourvertes de nouvelle horizon pour étoffer mes expériences et mes compétences, ainsi je me permet de glisser cette petite Note. Donc, si vous pensez que je serais utile dans votre équipe ou entreprise, ou si vous avez tout simplement bésoin de mes services, je suis totalement à votre disposition. Vous pouvez me contacter via les adresses dans <a href="contact/contact.html">Contact</a>.
+            </div>
             <p>
                 Merci de votre attention et Bonne Continuation!
             </p>
@@ -51,6 +61,12 @@
         </main>
         
         <footer>
+            <p>Ce site utilise les stacks suivants pour fonctionner corrèctement:</p>
+            <p>
+                <i class="stack fab fa-html5"> HTML5</i>
+                <i class="stack fab fa-css3"> CSS3</i>
+                <i class="stack fab fa-js"> Javascript</i>
+            </p>
             <p>©Copyright 2021 par Ryuka. Tous droits reservés.</p>
         </footer>
         

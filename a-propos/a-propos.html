@@ -7,10 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../styles/style.css" type="text/css" media="all" />
         <script src="../scripts/dropdown-btn.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="../styles/style-img.css" type="text/css" media="all" />
         
         <!-- à changer -->
         
-        <script src="https://kit.fontawesome.com/f89e2c7925.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../fontawesome/free/5.15.3-web/css/all.css"/>
     </head>
     
     <body>
@@ -23,20 +24,37 @@
         </header>
         
         <nav>
-            <a href="../index.html"><i class="fas fa-home"></i></a>
-            <div class="dropdown">
-                <button class="dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="../portfolio/portfolio-musicale.html">Musicale</a>
-                    <a href="../portfolio/portfolio-developpeur.html">Développeur</a>
-                </div>
-            </div>
-            <a href="../contact/contact.html"><i class="fas fa-envelope"></i></a>
-            <a class="right active" href="../a-propos/a-propos.html"><i class="fas fa-user"></i></a>
+            <ul>
+                <li>
+                    <a href="../index.html"><i class="fas fa-home"></i></a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../portfolio/portfolio-musicale.html"><i class="fas fa-music"></i> Musicale</a>
+                            <a href="../portfolio/portfolio-developpeur.html"><i class="fas fa-keyboard"></i> Développeur</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="../contact/contact.html"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="right active">
+                    <a href="../a-propos/a-propos.html"><i class="fas fa-user"></i></a>
+                </li>
+            </ul>
         </nav>
         
         <main>
-            Nothing Here ...
+            <div class="hero-img">
+                <div class="hero-text">
+                    <h1>Qui suis-je ?</h1>
+                </div>
+            </div>
+            <div class="page-content">
+                RANDRIANASOLOARINAVALONA<br />
+                Lovanirina
+            </div>
         </main>
         
         <footer>

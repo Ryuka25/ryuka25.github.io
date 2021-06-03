@@ -10,7 +10,7 @@
         
         <!-- à changer -->
         
-        <script src="https://kit.fontawesome.com/f89e2c7925.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../fontawesome/free/5.15.3-web/css/all.css"/>
     </head>
     
     <body>
@@ -23,39 +23,79 @@
         </header>
         
         <nav>
-            <a href="../index.html"><i class="fas fa-home"></i></a>
-            <div class="dropdown">
-                <button class="dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="../portfolio/portfolio-musicale.html">Musicale</a>
-                    <a href="../portfolio/portfolio-developpeur.html">Développeur</a>
-                </div>
-            </div>
-            <a class="active" href="../contact/contact.html"><i class="fas fa-envelope"></i></a>
-            <a class="right" href="../a-propos/a-propos.html"><i class="fas fa-user"></i></a>
+            <ul>
+                <li>
+                    <a href="../index.html"><i class="fas fa-home"></i></a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../portfolio/portfolio-musicale.html"><i class="fas fa-music"></i> Musicale</a>
+                            <a href="../portfolio/portfolio-developpeur.html"><i class="fas fa-keyboard"></i> Développeur</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="../contact/contact.html"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="right">
+                    <a href="../a-propos/a-propos.html"><i class="fas fa-user"></i></a>
+                </li>
+            </ul>
         </nav>
         
         <main>
-            <hr />
-            <table border="01">
-                <caption>CONTACTS</caption>
-                <tr>
-                    <td>E-mail</td>
-                    <td>lovanirina.ran@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>Téléphone</td>
-                    <td>+261 32 27 106 61</td>
-                </tr>
-                <tr>
-                    <td>Github</td>
-                    <td>Lovanirina (@Ryuka25)</td>
-                </tr>
-                <tr>
-                    <td>Facebook et Messenger</td>
-                    <td>Ryuka No Yassei</td>
-                </tr>
-            </table>
+            <div class="intro">
+                <h1>Comment me joindre ?</h1>
+                <p>Il est très facile de me joindre. Pour cela, veuillez utiliser une des contacts donnés ci-dessous.</p>
+            </div>
+            <div class="container">
+                <div class="container-header">
+                    <h2>E-mail</h2>
+                </div>
+                <div class="container-content">
+                    <ul>
+                        <li><i class="fas fa-mail-bulk"></i> lovanirina.ran@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-header">
+                    <h2>Téléphones</h2>
+                </div>
+                <div class="container-content">
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +261 32 27 106 61</li>
+                        <li><i class="fas fa-phone"></i> +261 34 90 479 96</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-header">
+                    <h2>Réseaux Sociaux</h2>
+                </div>
+                <div class="container-content">
+                    <ul>
+                        <li><i class="fab fa-whatsapp"></i> <b>Whatsapp:</b> +261328233221</li>
+                        <li><i class="fab fa-instagram"></i> <b>Instagram:</b> @cestryuka</li>
+                        <li><i class="fab fa-facebook"></i> <b>Facebook:</b> Ryuka</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-header">
+                    <h2>Autres Plateformes</h2>
+                </div>
+                <div class="container-content">
+                    <ul>
+                        <li><i class="fab fa-github"></i> <b>Github:</b> Lovanirina(@Ryuka25)</li>
+                        <li><i class="fab fa-discord"></i> <b>Discord:</b> @Ryuka#3688</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="disclaimer">
+                Toute fois, si vous n'arriver pas à me joindre, je vous prie d'utiliser une autre canal de contact.
+            </div>
         </main>
             
         <footer>
