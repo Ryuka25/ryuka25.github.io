@@ -1,75 +1,143 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Lovanirina | Ryuka - Site Personelle</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="styles/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="./assets/styles/style.css" type="text/css" media="all" />
         <script src="scripts/dropdown-btn.js" type="text/javascript" charset="utf-8"></script>
         
         <!-- à changer -->
         
-        <link rel="stylesheet" href="../fontawesome/free/5.15.3-web/css/all.css"/>
+        <link rel="stylesheet" href="../web-toolkit/fontawesome/free/5.15.3-web/css/all.css"/>
+        <link rel="stylesheet" href="../web-toolkit/bootstrap/4.6.0/dist/css/bootstrap.min.css">
+        <script src="../web-toolkit/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../web-toolkit/bootstrap/4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+            html {
+                overflow-x: hidden;
+            }
+        </style>
     </head>
-    
+
     <body>
         
-        <header>
-            <h1>
-                Lovanirina<br />
-                <small>Site Personelle</small>
-            </h1>
-        </header>
-        
-        <nav>
-            <ul>
-                <li class="active">
-                    <a href="index.html"><i class="fas fa-home"></i></a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropdown-btn" onclick="myFunction()">PORTFOLIO</button>
-                        <div class="dropdown-content" id="myDropdown">
-                            <a href="portfolio/portfolio-musicale.html"><i class="fas fa-music"></i> Musicale</a>
-                            <a href="portfolio/portfolio-developpeur.html"><i class="fas fa-keyboard"></i> Développeur</a>
+        <div class="header">
+            <div class="jumbotron mb-0 display-4 text-center">
+                Make it right before you make it faster.
+            </div>
+            <div>
+                <nav class="navbar navbar-expand-sm justify-content-arround bg-dark navbar-dark text-center">
+                    <div class="w-50 badge badge-light mx-auto">
+                        <pre class="my-0" style="overflow-y:hidden">
+ ____   __   __  _   _   _  __     _    
+|  _ \  \ \ / / | | | | | |/ /    / \   
+| |_) |  \ V /  | | | | | ' /    / _ \  
+|  _ <    | |   | |_| | | . \   / ___ \ 
+|_| \_\   |_|    \___/  |_|\_\ /_/   \_\
+                        </pre> 
+                    </div>
+                    <div class="w-50 h5">
+                        <ul class="navbar-nav pr-0">
+                            <li class="nav-item w-100 mx-auto">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-home"></i> Home
+                                </a>
+                            </li>
+                            <li class="nav-item w-100 mx-auto">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-envelope"></i> JoinMe
+                                </a>
+                            </li>
+                            <li class="nav-item w-100 mx-auto">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-user"></i> Portfolio
+                                </a>
+                            </li>
+                            <li class="nav-item w-100 mx-auto">
+                                <a href="#" class="nav-link">
+                                    myBlog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <main>
+            <div class="container text-center">
+                <h1>
+                    <span class="badge badge-dark">W E L C O M E</span>
+                    <span class="badge badge-dark">T O</span>
+                    <span class="badge badge-dark">MY</span>
+                    <span class="badge badge-dark">P E R S O N N A L</span>
+                    <span class="badge badge-dark">W E B S I T E</span><br>
+                    <small>
+                        <span class="badge border border-dark">... with <i class="fas fa-heart"> </i></small>
+                    </span>
+                </h1>
+            </div>
+            <div class="container">
+                <p>
+                    <b>Hello Everyone!</b> My name is <b>RANDRIANASOLOARINAVALONA Lovanirina</b>. I know that my name is too long but you can just call me <b>Lovanirina</b> or with my pseudo <b>Ryuka</b> for intimidating people! <br />
+                </p>
+                <p>
+                    I am an IT student from <span class="text-info">" Ecole Supérieur du Technologie de l'Information (ESTI) Antanimena "</span>. Time to time, I am also a "rapper" and my blaze is "Ryuka".<br>
+                    So, if you are here for purpose related to IT and music or anything else in my skills, I am under    your service.
+                </p>
+                
+                <div class="alert alert-info">
+                    <p>
+                    Je suis également à la recherche et décourvertes de nouvelle horizon pour étoffer mes expériences et mes compétences,
+                    ainsi je me permet de glisser cette petite Note. Donc, si vous pensez que je serais utile dans votre équipe ou entreprise,
+                    ou si vous avez tout simplement bésoin de mes services, je suis totalement à votre disposition.
+                    Vous pouvez me contacter via les adresses dans <a class="alert-link" href="contact/contact.html">Contact</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="container text-center h4">
+                <p> 
+                    Thanks for your attention and have a good day!
+                </p>
+            </div>
+        </main>
+
+        <div class="footer">
+            <div class="jumbotron text-center mb-0 bg-dark text-light">
+                <div class="container">
+                    <p>
+                        © Copyright since 2021 by <a class="text-info" href="/pages/portfolio.html"> Ryuka </a> . All right reserved. This website uses the following stack to work properly:
+                    </p>
+                    <div class="row ">
+                        <div class="col-4">
+                            <div><span class="badge badge-pill  badge-light">
+                                <i class="fab fa-html5"></i> HTML5 
+                            </span></div>
+                        </div>
+
+                        <div class="col-4">
+                            <div><span class="badge badge-pill badge-light">
+                                <i class="fab fa-css3"></i> CSS3
+                            </span></div>
+                            <div><span class="badge badge-pill badge-light">
+                                <i class=""></i> Bootstrap.CSS
+                            </span></div>
+                        </div>
+
+                        <div class="col-4">
+                            <div><span class="badge badge-pill badge-light">
+                                <i class="fab fa-js"></i> Javascript
+                            </span></div>
+                            <div><span class="badge badge-pill badge-light">
+                                <i class=""></i> Bootstrap.JS
+                            </span></div>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <a href="contact/contact.html"><i class="fas fa-envelope"></i></a>
-                </li>
-                <li class="right">
-                    <a href="a-propos/a-propos.html"><i class="fas fa-user"></i></a>
-                </li>
-            </ul>
-        </nav>
-        
-        <main>
-            <h1>Bienvenue à vous sur mon site personelle!</h1>
-            <p>
-                <b>Toutes mes salutations!</b><br />
-                Si vous ne me connaissez pas encore, derrière mon pseudo Ryuka No Yassei, ou simplement <b>Ryuka</b> pour mon nom de scène musicale, on peut aussi m'appeler <b>Lovanirina</b>.<br />
-                Je suis également un étudiant en Informatique, encore en cours d'apprentissage à l'Ecole Supérieur du Technologie de l'Information (ESTI) Antanimena.
-                </p>
-            <div class="disclaimer">
-                Je suis également à la recherche et décourvertes de nouvelle horizon pour étoffer mes expériences et mes compétences, ainsi je me permet de glisser cette petite Note. Donc, si vous pensez que je serais utile dans votre équipe ou entreprise, ou si vous avez tout simplement bésoin de mes services, je suis totalement à votre disposition. Vous pouvez me contacter via les adresses dans <a href="contact/contact.html">Contact</a>.
+                </div>
             </div>
-            <p>
-                Merci de votre attention et Bonne Continuation!
-            </p>
-                
-        </main>
-        
-        <footer>
-            <p>Ce site utilise les stacks suivants pour fonctionner corrèctement:</p>
-            <p>
-                <i class="stack fab fa-html5"> HTML5</i>
-                <i class="stack fab fa-css3"> CSS3</i>
-                <i class="stack fab fa-js"> Javascript</i>
-            </p>
-            <p>©Copyright 2021 par Ryuka. Tous droits reservés.</p>
-        </footer>
-        
+        </div>
     </body>
-    
+
 </html>
