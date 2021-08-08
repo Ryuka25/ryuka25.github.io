@@ -11,26 +11,22 @@
     />
     <script src="../web-toolkit/jquery/jquery-3.6.0.min.js"></script>
     <!-- <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
-    <script src="../web-toolkit/bootstrap/4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="../web-toolkit/bootstrap/4.6.0/dist/js/bootstrap.bundle.js"></script>
 
     <title>Sandbox</title>
 
-    <style>
-      .fakeimg {
-        height: 200px;
-        background: #aaa;
-      }
-    </style>
   </head>
   <body>
-    <div class="container">
-    <h1>Width Utilities</h1>
-    <p>Set the width of an element with the w-* classes:</p>
-    <div class="w-25 bg-warning">Width 25%</div>
-    <div class="w-50 bg-warning">Width 50%</div>
-    <div class="w-75 bg-warning">Width 75%</div>
-    <div class="w-100 bg-warning">Width 100%</div>
-    <div class="mw-100 bg-warning">Max Width 100%</div>
+  <div class="container">
+  <h3>Popover Example</h3>
+    <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">Click me</a>
 </div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+
   </body>
 </html>
