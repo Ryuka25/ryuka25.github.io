@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>📝 Postpads</title>
-    <link>https://ryuka25.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on 📝 Postpads</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.150.1</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 Jan 2024 14:46:12 +0300</lastBuildDate>
-    <atom:link href="https://ryuka25.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>User management</title>
-      <link>https://ryuka25.github.io/posts/user-management/</link>
+      <link>http://localhost:1313/posts/user-management/</link>
       <pubDate>Tue, 16 Jan 2024 14:46:12 +0300</pubDate>
-      <guid>https://ryuka25.github.io/posts/user-management/</guid>
+      <guid>http://localhost:1313/posts/user-management/</guid>
       <description>User management in linux OS</description>
     </item>
     <item>
       <title>Authentification in spa 🔐</title>
-      <link>https://ryuka25.github.io/posts/authentification_in_spa/</link>
+      <link>http://localhost:1313/posts/authentification_in_spa/</link>
       <pubDate>Mon, 15 Jan 2024 04:35:46 +0300</pubDate>
-      <guid>https://ryuka25.github.io/posts/authentification_in_spa/</guid>
+      <guid>http://localhost:1313/posts/authentification_in_spa/</guid>
       <description>&lt;p&gt;How authentication process work in Single Page Application (SPA)&lt;/p&gt;</description>
     </item>
     <item>
       <title>First post showcase</title>
-      <link>https://ryuka25.github.io/posts/first_post/</link>
+      <link>http://localhost:1313/posts/first_post/</link>
       <pubDate>Sun, 14 Jan 2024 14:06:29 +0300</pubDate>
-      <guid>https://ryuka25.github.io/posts/first_post/</guid>
+      <guid>http://localhost:1313/posts/first_post/</guid>
       <description>&lt;p&gt;This is the first post for my customed blogs&lt;/p&gt;</description>
     </item>
   </channel>
